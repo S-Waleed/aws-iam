@@ -1,7 +1,7 @@
 remote_state {
   backend = "s3"
   config = {
-    bucket  = "cloudly-engineer-terraform-state"
+    bucket  = "YOUR-terraform-state-BUCKET"
     key     = "${path_relative_to_include()}/iam/terraform.tfstate"
     region  = local.local_inputs.aws_region,
     profile = local.local_inputs.aws_cli_profile
